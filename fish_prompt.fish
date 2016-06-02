@@ -56,8 +56,7 @@ function fish_prompt
 
   # Line 1
   echo -n $red'┌'$cyan$USER$white'@'$cyan$__fish_prompt_hostname $gray(prompt_pwd)$normal
-  __fish_git_prompt
-  echo
+  echo (__fish_git_prompt)
 
   # Line 2
   echo -n $red'└'$pcolor$__fish_prompt_char $normal
